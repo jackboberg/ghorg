@@ -1,0 +1,31 @@
+{
+  "name": "ghorg",
+  "description": "CLI tools for managing a github organization Edit",
+  "version": "0.0.0",
+  "author": "Jack Boberg <hello@jackboberg.info>",
+  "bugs": {
+    "url": "https://github.com/jackboberg/ghorg/issues"
+  },
+  "devDependencies": {
+    "standard": "^9.0.1",
+    "tap": "^10.3.0"
+  },
+  "homepage": "https://github.com/jackboberg/ghorg",
+  "keywords": [
+    "CLI",
+    "github",
+    "organizations"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackboberg/ghorg.git"
+  },
+  "scripts": {
+    "cov": "npm run unit -- --cov --coverage-report=lcov",
+    "lint": "standard -v",
+    "test": "npm run lint && npm run unit",
+    "unit": "tap test/*.js -R spec"
+  }
+}
