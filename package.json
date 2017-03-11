@@ -6,6 +6,11 @@
   "bugs": {
     "url": "https://github.com/jackboberg/ghorg/issues"
   },
+  "bin": "./index.js",
+  "dependencies": {
+    "rc": "1.1.7",
+    "yargs": "7.0.2"
+  },
   "devDependencies": {
     "standard": "^9.0.1",
     "tap": "^10.3.0"
