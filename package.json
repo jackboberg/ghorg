@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/jackboberg/ghorg/issues"
   },
+  "dependencies": {
+    "yargs": "7.0.2"
+  },
   "devDependencies": {
     "standard": "^9.0.1",
     "tap": "^10.3.0"
