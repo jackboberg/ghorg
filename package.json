@@ -8,6 +8,7 @@
   },
   "bin": "./index.js",
   "dependencies": {
+    "github": "9.2.0",
     "rc": "1.1.7",
     "yargs": "7.0.2"
   },
