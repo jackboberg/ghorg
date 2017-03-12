@@ -13,6 +13,7 @@
     "yargs": "7.0.2"
   },
   "devDependencies": {
+    "code": "^4.0.0",
     "standard": "^9.0.1",
     "tap": "^10.3.0"
   },
