@@ -24,4 +24,3 @@ test('exposes expected functions', ({ end: done }) => {
 
   done()
 })
-
