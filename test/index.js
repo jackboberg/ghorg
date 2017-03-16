@@ -1,6 +1,6 @@
 const { test } = require('tap')
 
-test('should have a test', (t) => {
+test('should have tests', { skip: true }, (t) => {
   t.fail('does not')
   t.end()
 })

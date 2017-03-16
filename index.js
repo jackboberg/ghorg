@@ -1,14 +1,11 @@
-#!/usr/bin/env node
+const Assert = require('assert')
+const Factory = require('./lib/factory')
 
-// eslint-disable-next-line no-unused-expressions
-require('yargs')
-  .config(require('rc')('ghorg', null, {}))
-  .option('o', {
-    alias: 'organization',
-    describe: 'Organization name',
-    required: true
-  })
-  .commandDir('./commands')
-  .demandCommand()
-  .help('h')
-  .argv
+const isString = (v) => (typeof v === 'string' || v instanceof String)
+
+module.exports = ({ organization, token } = {}) => {
+  Assert(isString(organization), '`organization` must be a String')
+  if (token) Assert(isString(token), '`token` must be a String')
+
+  return Factory({ organization, token })
+}
