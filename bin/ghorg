@@ -3,10 +3,16 @@
 // eslint-disable-next-line no-unused-expressions
 require('yargs')
   .config(require('rc')('ghorg', null, {}))
-  .option('o', {
-    alias: 'organization',
-    describe: 'Organization name',
-    required: true
+  .options({
+    'o': {
+      alias: 'organization',
+      describe: 'Organization name',
+      required: true
+    },
+    't': {
+      alias: 'token',
+      describe: 'Authentication token'
+    }
   })
   .commandDir('../commands')
   .demandCommand()

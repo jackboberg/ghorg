@@ -24,17 +24,19 @@ Commands:
 
 Options:
   -o, --organization  Organization name                               [required]
-  -h                  Show help                                        [boolean]
+  -t, --token         Authentication token
+  -h                  Show help
 ```
 
 ### Configuration Files
 
 Create [an rc file][rc] to set defaults, so you don't have to pass an 
-`organization` flag to every command.
+`organization` and `token` flag to every command.
 
 ```
 # ~/.ghorgrc
 organization = MyOrgName
+token = xxx
 ```
 
 `ghorg` will walk the directory tree looking for rc files, so you can create 
@@ -54,6 +56,7 @@ ghorg keys [team]
 
 Options:
   -o, --organization  Organization name                               [required]
+  -t, --token         Authentication token
   -h                  Show help                                        [boolean]
 ```
 
