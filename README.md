@@ -1,5 +1,7 @@
 # ghorg
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jackboberg/ghorg.svg)](https://greenkeeper.io/)
+
 > CLI tools for managing a github organization
 
 ## Table of Contents
